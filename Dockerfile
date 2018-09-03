@@ -20,6 +20,3 @@ ADD https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINA
 RUN tar xzf /usr/local/hugo/${HUGO_BINARY}.tar.gz -C /usr/local/hugo/ \
     && ln -s /usr/local/hugo/hugo /usr/local/bin/hugo \
     && rm /usr/local/hugo/${HUGO_BINARY}.tar.gz
- 
-EXPOSE 1313
-CMD hugo version
